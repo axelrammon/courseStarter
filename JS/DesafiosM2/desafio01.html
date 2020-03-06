@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div id="quadrados">
+    <button class="btnCriarQ">Criar bola quadrada</button>
+  </div>
+
+  <script>
+
+    var btnCriar = document.querySelector('button');
+
+    btnCriar.onclick = () => {
+
+      var divQuadrado = document.querySelector('#quadrados');
+      var quadrado = document.createElement('div');  
+
+      quadrado.style.width = '100px';
+      quadrado.style.height = '100px';
+      quadrado.style.backgroundColor = '#f00';
+      quadrado.style.margin = '5px';      
+
+      divQuadrado.appendChild(quadrado);
+
+    }
+
+  </script>
+
+</body>
+</html>
