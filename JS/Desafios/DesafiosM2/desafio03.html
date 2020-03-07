@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div id="users">
+    <ul>
+
+    </ul>
+  </div>
+
+  <script>
+    var nomes = ["Diego", "Gabriel", "Lucas"];
+    
+    function addUsers(lista) {
+      for (nome of lista) {
+        var lista = document.querySelector('ul');
+        var itens = document.createElement('li');
+        var texto = document.createTextNode(nome);
+        
+        itens.appendChild(texto);
+        lista.appendChild(itens);
+      }
+    }
+
+    addUsers(nomes);
+    
+  </script>
+
+</body>
+</html>

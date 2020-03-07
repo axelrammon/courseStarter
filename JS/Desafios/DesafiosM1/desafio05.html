@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D05</title>
+</head>
+<body>
+  <script>
+    var usuarios = [
+      {
+        nome: "Diego",
+        habilidades: ["Javascript", "ReactJS", "Redux"]
+      },
+      {
+        nome: "Gabriel",
+        habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+      }
+    ];
+
+    function retornaDados(x) {
+      for (i of x) {
+        var habilidadesSeparadas = i.habilidades.join(', ');
+      
+        var frase = `O ${i.nome} possui as habilidades: ${habilidadesSeparadas}`;
+      
+        console.log(frase);
+      }
+      
+
+    }
+
+    var resultado = retornaDados(usuarios);
+    console.log(resultado);
+
+  </script>
+</body>
+</html>
