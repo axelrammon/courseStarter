@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div id="app">
+    <input type="text" name="nome" />
+    <!-- <button class="botao">Click here</button> -->
+  </div>
+
+    <script>
+
+      var link = document.createElement('a');
+      link.setAttribute('href', 'https://github.com/axelrammon');
+
+      var text = document.createTextNode('Github');
+      link.appendChild(text);
+
+      var divElement = document.querySelector('div#app');
+      divElement.appendChild(link);
+
+      var inputElement = document.querySelector('input[name=nome]');
+      // divElement.removeChild(inputElement)
+
+    </script>
+
+</body>
+</html>
